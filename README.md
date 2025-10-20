@@ -17,5 +17,5 @@ Base structure of a project to develop with ejs
 ## Vercel
 - Open [VERCEL](https://vercel.com/)
 - Click into "Add new" -> "Project"
-- Import a GitHub repository
+- Import a GitHub repository.
 - Vercel automatic detect vercel.json
