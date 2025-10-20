@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= title %></title>
+    <link rel="stylesheet" href="/public/css/style.css">
   </head>
   <body>
-    <%- include('../partials/header') %>
+    <%- await include('../partials/header') %>
 
     <h1><%= title %></h1>
     <p>Bienvenido a la página principal.</p>
 
-    <%- include('../partials/footer') %>
+    <%- await include('../partials/footer') %>
   </body>
 </html>
