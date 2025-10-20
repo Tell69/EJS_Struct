@@ -5,6 +5,11 @@ const port = process.env.PORT || 3000;
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 
+// Habilitar async en EJS
+app.engine('ejs', (filePath, options, callback) => {
+  ejs.renderFile(filePath, options, { async: true }, callback);
+});
+
 // Rutas
 const indexRoute = require('./routes/index');
 const aboutRoute = require('./routes/about');
